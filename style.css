@@ -1,0 +1,70 @@
+/* body */
+body{
+    margin: 0;
+    background-color: #D6DDED;
+    font-family: sans-serif;
+}
+/* full header */
+/* navigation bar style */
+.secondary-bg{
+    background-image: url("/B12A01-landing-launchpad/Assets/Hero-bg.png");
+    height: 698px;
+}
+
+
+.nav-bar{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding:  40px 60px 0;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 34px;
+    color: #4E47FF;
+    font-weight:900;
+    font-family: 'Inter',sans-serif;
+}
+.nav-btn{ 
+    color: white;
+    background-color: #4E47FF;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 132px;
+    height: 48px;
+    font-family: 'Inter',sans-serif;
+}
+.content h1{
+    font-size: 65px;
+    font-weight: bold;
+    color: #252432;
+    text-align: center;
+    max-width: 905px;
+    margin: 0 20px 30px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.content-btn{
+    color: white;
+    background-color: #4E47FF;
+    border: none;
+    width: 174px;
+    height: 48px;
+    padding: 12px 36px;
+    border-radius: 10px;
+    font-size: 16px;
+}

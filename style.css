@@ -274,7 +274,7 @@ body {
 
 
 /* ----Touch content---- */
-.touch{
+.touch {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -284,7 +284,8 @@ body {
     flex-wrap: wrap;
     padding: 120px;
 }
-.left-touch p{
+
+.left-touch p {
     flex-direction: column;
     max-width: 480px;
     font-size: 80px;
@@ -293,7 +294,7 @@ body {
     margin: 0;
 }
 
-.right-touch{
+.right-touch {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -301,7 +302,7 @@ body {
     gap: 12px;
 }
 
-.right-touch label{
+.right-touch label {
     font-size: 14px;
     font-weight: 500;
     color: #252432;
@@ -310,27 +311,27 @@ body {
 
 .right-touch input,
 .right-touch textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  font-size: 16px;
-  font-family: 'Inter', sans-serif;
-  background-color: white;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
 }
 
 .right-touch textarea {
-  height: 96px;
+    height: 96px;
 }
 
 
-.right-btn{
-  margin-top: 16px;
-  width: 434px;
+.right-btn {
+    margin-top: 16px;
+    width: 434px;
 }
 
 /* ----Footer---- */
-footer{
+footer {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -339,15 +340,15 @@ footer{
     text-align: center;
 }
 
-.lg{
+.lg {
     font-size: 100px;
     font-weight: bold;
     color: #4E47FF;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top: 60px;
 }
 
-.f-content{
+.f-content {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -357,22 +358,31 @@ footer{
     font-size: 14px;
 }
 
-footer li{
+footer li {
     display: inline-block;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: #8987A1;
     font-size: 14px;
     justify-content: space-between;
 }
 
-.f-link ul{
+.f-link ul {
     display: flex;
     justify-content: center;
     gap: 60px;
     color: #8987A1;
     padding: 0;
     margin-top: 20px 0 0 0;
+}
+
+/* Extra Hover btn */
+
+.shared-btn:hover{
+    background-color: #6C63FF;
+    box-shadow: 0 0 12px #4E47FF;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
 }

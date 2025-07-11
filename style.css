@@ -1,12 +1,19 @@
-/* body */
-body{
-    margin: 0;
-    background-color: #D6DDED;
-    font-family:'Inter', sans-serif;
+/* 1. Shared layout constraint */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-/* shared button all */
-.shared-btn{
+/* 2. Body */
+body {
+    margin: 0;
+    background-color: #D6DDED;
+    font-family: 'Inter', sans-serif;
+}
+
+/* 3. Shared Button */
+.shared-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,98 +23,207 @@ body{
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
+    padding: 12px 24px;
+    cursor: pointer;
 }
 
-/* full header */
-/* navigation bar style */
-.secondary-bg{
+/* 4. Header */
+.secondary-bg {
     background-image: url("/B12A01-landing-launchpad/Assets/Hero-bg.png");
     height: 698px;
 }
 
-
-.nav-bar{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding:  40px 60px 0;
-}
-
-
-nav{
+.nav-bar nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
-.logo{
+.logo {
     font-size: 34px;
     color: #4E47FF;
-    font-weight:900;
-    font-family: 'Inter',sans-serif;
+    font-weight: 900;
 }
-.nav-btn{ 
-    padding: 12px 24px;
-    font-family: 'Inter',sans-serif;
-}
-.content h1{
-    font-size: 65px;
-    font-weight: bold;
-    color: #252432;
-    text-align: center;
-    max-width: 905px;
-    margin: 0 20px 30px;
-    font-family: 'Raleway', sans-serif;
-}
-.content{
+
+.content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 100px;
+    text-align: center;
 }
 
-.content-btn{
-    padding: 12px 36px;
-    font-family: 'Inter',sans-serif;
+.content h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #252432;
+    max-width: 905px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
 }
 
-
-/* -----body---- */
-
-/* ---action --*/
-
-.action{
+/* 5. Action Section */
+.action {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 100px 200px;
+    align-items: center;
+    margin: 100px auto;
+    gap: 60px;
 }
-.image img{
+
+.left {
+    flex: 1;
+}
+
+.image img {
     border-radius: 48px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
-.left{
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-}
-
-.action-title{
+.action-title {
     font-size: 28px;
     font-weight: 700;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-.action-content{
-    font-family: 'Raleway',sans-serif;
+
+.action-content {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    flex-direction: column;
     max-width: 500px;
     color: #252432;
     font-size: 16px;
+    margin: 16px 0;
 }
 
-.action-btn{
-    padding: 12px 36px;
-    font-family: 'Raleway',sans-serif;
-    width: fit-content;
+/* 6. Productive Users */
+.productive-users {
+    background-color: rgba(78, 71, 255, 0.1);
+    padding: 80px 24px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 24px;
 }
+
+.productive-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.stat h3 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #4E47FF;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #252432;
+    margin-top: 8px;
+}
+
+/* --- User Reviews Section --- */
+.user-reviews {
+    padding: 80px 200px;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.user-title {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+    color: #252432;
+}
+
+/* -----Cards Wrapper ----*/
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* ----Individual Card----- */
+.cards {
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    width: 330px;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----Stars Row---- */
+.stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.stars img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ---Card Title--- */
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    color: #252432;
+}
+
+/* ----Subtitle Text---- */
+.subtitle {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    margin: 12px 0;
+}
+
+/*--- Reviewer Section--- */
+.user-reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.user-reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+}
+
+.reviewer-date {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+}
+

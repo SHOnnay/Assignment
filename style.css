@@ -28,7 +28,7 @@ body {
 
 /* --- Header--- */
 .secondary-bg {
-    background-image: url("/B12A01-landing-launchpad/Assets/Hero-bg.png");
+    background-image: url("./B12A01-landing-launchpad/Assets/Hero-bg.png");
     height: 698px;
 }
 
@@ -380,7 +380,7 @@ footer a {
 
 /* Extra Hover btn */
 
-.shared-btn:hover{
+.shared-btn:hover {
     background-color: #6C63FF;
     box-shadow: 0 0 12px #4E47FF;
     transform: scale(1.03);
